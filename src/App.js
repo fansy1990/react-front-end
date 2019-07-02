@@ -4,6 +4,8 @@ import './App.css';
 
 import ProjectTable from './component/ProjectTable.js';
 
+import DemoSlider from './sliders/DemoSlider.js';
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {/*<header className="App-header">
       </header>*/}
+      <br/>
+        <div className="DemoSlider">
+            <DemoSlider/>
+        </div>
     </div>
   );
 }

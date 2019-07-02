@@ -6,6 +6,8 @@ import 'react-table/react-table.css';
 
 import axios from "axios";
 
+import PopupParent from '../popup/PopupParent.js';
+
 
 export  default  class ProjectTable extends React.Component {
     constructor() {
@@ -66,7 +68,7 @@ export  default  class ProjectTable extends React.Component {
                                 Header: "简介",
                                 accessor: "hideName",
                                 Cell: row => (
-                                    <div />
+                                    <PopupParent child_name={row.value} />
                                 )
                             }, {
                                 Header: "状态",
